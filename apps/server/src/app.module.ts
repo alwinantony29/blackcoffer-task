@@ -8,7 +8,9 @@ import { TypegooseModule } from 'nestjs-typegoose';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    TypegooseModule.forRoot('mongodb://localhost:27017/blackcoffer/'),
+    TypegooseModule.forRoot(
+      'mongodb+srv://Atlas1234:Atlas123@cluster0.ysimyt6.mongodb.net/black-coffer?retryWrites=true&w=majority',
+    ),
     EnergyInsightsModule,
   ],
   controllers: [AppController],
