@@ -21,12 +21,17 @@ export default function Home() {
       .catch(console.log);
   }, []);
   return (
-    <div className="flex bg-gray-500">
-      <MainLayout />
-      <div className="flex-col gap-5  w-[800px] border-2 bg-gray-600 ">
-        <PieChart data={data} />
-        <BarChart data={data} />
-      </div>
+    <div className="flex  bg-slate-950">
+      <MainLayout>
+        <div className="flex-col ">
+          <div className="flex-col gap-5 w-[100%] border-slate-700 border-[0.5px] m-5 rounded-md">
+            <BarChart data={data} />
+          </div>
+          <div className="flex w-[50%] border-slate-700 border-[0.5px] m-5 rounded-md">
+            <PieChart data={data} />
+          </div>
+        </div>
+      </MainLayout>
     </div>
   );
 }

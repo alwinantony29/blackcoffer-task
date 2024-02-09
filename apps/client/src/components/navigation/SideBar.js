@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-800 static text-white w-64 flex flex-col h-screen border-gray-800 border-2">
+    <div className=" fixed text-white w-44 flex flex-col h-screen border-slate-700 border-r-[0.5px]">
       <div className="p-4">
         <h2 className="text-xl font-bold">Admin Panel</h2>
       </div>

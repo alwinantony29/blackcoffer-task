@@ -55,7 +55,7 @@ const BarChart = ({data}) => {
   }, [data]);
 
   return (
-    <div className="p-4 w-[750px] h-[500px] bg-black">
+    <div className="p-5 w-[750px] h-[500px]">
       <text>Bar Chart 2024</text>
       <svg ref={svgRef}></svg>
     </div>

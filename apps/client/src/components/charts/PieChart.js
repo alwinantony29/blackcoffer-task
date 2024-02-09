@@ -13,13 +13,13 @@ const PieChart = ({data = []}) => {
   const svgRef = useRef();
 
   useEffect(() => {
-    const width = 400;
-    const height = 400;
+    const width = 300;
+    const height = 300;
     const radius = Math.min(width, height) / 2;
     const svg = d3
       .select(svgRef.current)
-      .attr('width', width + 100)
-      .attr('height', height + 50);
+      .attr('width', '100%')
+      .attr('height', height);
 
     const color = d3
       .scaleOrdinal()
@@ -56,11 +56,14 @@ const PieChart = ({data = []}) => {
       .append('text')
       .attr('transform', d => `translate(${arc.centroid(d)})`)
       .attr('dy', '.35em')
+      .attr('fill', 'white')
+      .style('font-size', '12px')
       .text(d => d.data);
   }, [data]);
 
   return (
-    <div className="p-4 w-[100%] h-[440px] ">
+    <div className="p-5 w-[100%]  ">
+      <text>Pie Chart 2024</text>
       <svg ref={svgRef}></svg>
     </div>
   );
