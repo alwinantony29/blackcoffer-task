@@ -5,11 +5,13 @@ import NotificationMenu from '../Notifications';
 import LanguageMenu from '../language-menu';
 import ShortCutMenu from '../shortcut-menu';
 import SearchDialog from '../search-dialog';
+import SideBar from '../side-bar';
 
 const NavBar = () => {
   return (
     <div className="w-[99vw] h-[60px] gap-5 border m-[.5vw] rounded-lg flex justify-between p-5 items-center ">
-      <div>
+      <div className='flex items-center gap-5'>
+        <SideBar/>
         <SearchDialog />
       </div>
       <div className="flex gap-5 items-center">

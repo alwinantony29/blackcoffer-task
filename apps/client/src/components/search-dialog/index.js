@@ -18,7 +18,7 @@ const SearchDialog = () => {
         <DialogTrigger>
           <div className="flex items-center gap-2">
             <IoSearchOutline className="w-[1.5rem] h-[1.5rem]" />
-            Search
+            Search 
           </div>
         </DialogTrigger>
         <DialogContent>
